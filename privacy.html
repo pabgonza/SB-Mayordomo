@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — SB Mayordomo</title>
+<style>
+  :root { color-scheme: light dark; --bg: #fbfbfa; --fg: #1a1a19; --muted: #6b6b66;
+          --line: #e2e2dd; --accent: #b8562f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12120f; --fg: #e8e8e2; --muted: #94948c; --line: #2a2a25; --accent: #e0885c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 ui-sans-serif,
+         -apple-system, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.7rem; letter-spacing: -.02em; margin: 0 0 .3rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: .9rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="sub">SB Mayordomo · última actualización: 1 de septiembre de 2026</p>
+
+  <p>SB Mayordomo es una aplicación de escritorio de uso personal, con un único usuario:
+  su autor. No hay servidores propios, no hay cuentas de usuario y no hay base de datos
+  remota. Todo el procesamiento ocurre en el computador del usuario.</p>
+
+  <h2>Datos a los que accede</h2>
+  <p>Con la autorización del usuario, y solo sobre la cuenta de Google que él mismo
+  autoriza, la aplicación accede a:</p>
+  <ul>
+    <li>Los mensajes de correo de esa cuenta: remitente, destinatarios, fecha, asunto,
+      cuerpo en texto y nombres de los archivos adjuntos.</li>
+    <li>Las etiquetas de esa cuenta, para marcar qué mensajes ya fueron registrados.</li>
+  </ul>
+  <p>El permiso solicitado es <code>gmail.modify</code>, que habilita leer y etiquetar.
+  La aplicación no envía, no responde, no reenvía y no elimina correo, ni descarga el
+  contenido de los adjuntos.</p>
+
+  <h2>Para qué se usan</h2>
+  <p>Únicamente para clasificar cada correo en el proyecto que corresponda —según reglas
+  escritas por el propio usuario— y proponerle un resumen que él aprueba o rechaza antes
+  de que se guarde en sus archivos locales.</p>
+
+  <h2>Dónde se guardan</h2>
+  <ul>
+    <li>Los resúmenes aprobados quedan en archivos markdown en el disco del usuario.</li>
+    <li>Las credenciales de acceso se guardan en el equipo del usuario, fuera del código
+      del proyecto, y no se transmiten a ningún tercero salvo a Google al renovarlas.</li>
+    <li>No se conservan copias en la nube ni se sincroniza nada con servicios externos.</li>
+  </ul>
+
+  <h2>Procesamiento con inteligencia artificial</h2>
+  <p>Para redactar el resumen propuesto, el contenido del correo se envía al servicio de
+  IA de Anthropic (Claude), que lo procesa bajo los términos y la política de privacidad
+  de Anthropic y devuelve un texto. Ese es el único envío de contenido de correo fuera
+  del equipo del usuario. El servicio no decide dónde se archiva nada ni escribe en los
+  archivos: solo redacta el texto propuesto.</p>
+
+  <h2>Con quién se comparte</h2>
+  <p>Con nadie. Los datos no se venden, no se ceden, no se usan para publicidad y no se
+  emplean para entrenar modelos.</p>
+
+  <h2>Uso limitado</h2>
+  <p>El uso que esta aplicación hace de la información recibida de las APIs de Google se
+  ajusta a la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de
+  Datos de Usuario de los Servicios de la API de Google</a>, incluidos sus requisitos de
+  Uso Limitado.</p>
+
+  <h2>Cómo revocar el acceso</h2>
+  <p>El usuario puede retirar el permiso en cualquier momento desde
+  <a href="https://myaccount.google.com/permissions">la página de permisos de su cuenta de
+  Google</a>. Al hacerlo, la aplicación deja de acceder al correo de inmediato. Los archivos
+  ya guardados en su disco siguen siendo suyos y puede borrarlos cuando quiera.</p>
+
+  <h2>Retención</h2>
+  <p>La aplicación no conserva copia de los correos: lee lo que necesita en cada corrida y
+  guarda solo el resumen aprobado. Ese resumen permanece en el disco del usuario mientras
+  él decida mantenerlo.</p>
+
+  <h2>Cambios</h2>
+  <p>Cualquier cambio a esta política se publicará en esta misma página, con su fecha de
+  actualización.</p>
+
+  <footer>
+    Consultas: <a href="mailto:pablobot901@gmail.com">pablobot901@gmail.com</a> ·
+    <a href="index.html">Volver al inicio</a>
+  </footer>
+</main>
+</body>
+</html>

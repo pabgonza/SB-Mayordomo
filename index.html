@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SB Mayordomo</title>
+<style>
+  :root { color-scheme: light dark; --bg: #fbfbfa; --fg: #1a1a19; --muted: #6b6b66;
+          --line: #e2e2dd; --accent: #b8562f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12120f; --fg: #e8e8e2; --muted: #94948c; --line: #2a2a25; --accent: #e0885c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 ui-sans-serif,
+         -apple-system, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.9rem; letter-spacing: -.02em; margin: 0 0 .3rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SB Mayordomo</h1>
+  <p class="sub">Asistente personal de escritorio para organizar un sistema de notas propio.</p>
+
+  <p>SB Mayordomo es una herramienta de uso personal, con un único usuario: su autor.
+  Corre en su computador y ayuda a mantener ordenado un sistema de notas local en
+  archivos markdown.</p>
+
+  <h2>Qué hace con Gmail</h2>
+  <ul>
+    <li>Lee los correos nuevos de la casilla de su propio usuario.</li>
+    <li>Los clasifica al proyecto que corresponda según reglas escritas por el usuario.</li>
+    <li>Propone un resumen que el usuario aprueba o rechaza antes de guardarlo.</li>
+    <li>Marca en Gmail, con etiquetas, qué correos ya fueron registrados.</li>
+  </ul>
+  <p>No envía correos, no responde, no borra y no accede a ninguna casilla que no sea
+  la del usuario que autorizó la aplicación.</p>
+
+  <h2>Privacidad</h2>
+  <p>Los datos se procesan en el equipo del usuario y no se comparten con terceros más
+  allá de lo descrito en la <a href="privacy.html">política de privacidad</a>.</p>
+
+  <footer>
+    Proyecto personal · contacto:
+    <a href="mailto:pablobot901@gmail.com">pablobot901@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
